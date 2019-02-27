@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Выйти
+{% endblock %}
+{% block content %}
+<div class="text-center main-block">
+    <div class="login-logout">
+    <img class="mb-4" src="{% static '/img/confetti.svg' %}" alt="" width="72" height="72">
+        <h3 class="h3 mb-3 font-weight-normal" style="font-family: feodorovupdateplain;">Приятно повидаться :)</h3>
+        <h3 class="h3 mb-3 font-weight-normal" style="font-family: feodorovupdateplain;">Войти <a href="{% url 'auth_login' %}">обратно?</a></h3>
+    </div>
+</div>
+{% endblock %}
